@@ -16,6 +16,7 @@
 		<spawnThingOnRemoved MayRequire="oskarpotocki.vanillavehiclesexpanded">VVE_CarWheel</spawnThingOnRemoved>
 		<forceAlwaysRemovable MayRequire="oskarpotocki.vanillavehiclesexpanded">true</forceAlwaysRemovable>
 		<tags>
+			<li>MovingLimbSegment</li>
 			<li>MovingLimbDigit</li>
 		</tags>
 	</BodyPartDef>
