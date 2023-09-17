@@ -12,8 +12,10 @@
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<PsychicSensitivity>0</PsychicSensitivity>
-			<ToxicSensitivity>0</ToxicSensitivity>
-			<Flammability>0</Flammability>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>10</Flammability>
+			<MeatAmount>100</MeatAmount>
+			<LeatherAmount>100</LeatherAmount>
 		</statBases>
 		<tools>
 			<li>
@@ -102,6 +104,10 @@
 		</race>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalFarm</li>
+			<li>AnimalVehicle</li>
+			<li>VFEAnimalVehicle</li>
+			<li>StorytimeAnimal</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -135,7 +141,6 @@
 		</alternateGraphics>
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAEAF_CarFamily/CarFamily</texPath>
 					<drawSize>1.1</drawSize>
@@ -188,8 +193,10 @@
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<PsychicSensitivity>0</PsychicSensitivity>
-			<ToxicSensitivity>0</ToxicSensitivity>
-			<Flammability>0</Flammability>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>10</Flammability>
+			<MeatAmount>80</MeatAmount>
+			<LeatherAmount>80</LeatherAmount>
 		</statBases>
 		<tools>
 			<li>
@@ -276,6 +283,10 @@
 		</race>
 		<tradeTags>
 			<li>AnimalUncommon</li>
+			<li>AnimalFarm</li>
+			<li>AnimalVehicle</li>
+			<li>VFEAnimalVehicle</li>
+			<li>StorytimeAnimal</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -362,10 +373,12 @@
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<PsychicSensitivity>0</PsychicSensitivity>
-			<ToxicSensitivity>0</ToxicSensitivity>
-			<Flammability>0</Flammability>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>10</Flammability>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<MarketValue>650</MarketValue>
+			<MeatAmount>100</MeatAmount>
+			<LeatherAmount>100</LeatherAmount>
 		</statBases>
 		<tools>
 			<li>
@@ -443,6 +456,11 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+		<tradeTags>
+			<li>AnimalVehicle</li>
+			<li>VFEAnimalVehicle</li>
+			<li>StorytimeAnimal</li>
+		</tradeTags>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -523,10 +541,12 @@
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<PsychicSensitivity>0</PsychicSensitivity>
-			<ToxicSensitivity>0</ToxicSensitivity>
-			<Flammability>0</Flammability>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>10</Flammability>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<MarketValue>650</MarketValue>
+			<MeatAmount>80</MeatAmount>
+			<LeatherAmount>100</LeatherAmount>
 		</statBases>
 		<tools>
 			<li>
@@ -604,6 +624,13 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFarm</li>
+			<li>AnimalVehicle</li>
+			<li>VFEAnimalVehicle</li>
+			<li>StorytimeAnimal</li>
+		</tradeTags>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -686,21 +713,21 @@
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<PsychicSensitivity>0</PsychicSensitivity>
-			<ToxicSensitivity>0</ToxicSensitivity>
-			<Flammability>0</Flammability>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>10</Flammability>
+			<MeatAmount>40</MeatAmount>
+			<LeatherAmount>60</LeatherAmount>
 		</statBases>
 		<tools>
-
 			<li>
-				<label>front grille</label>
+				<label>fork duplex</label>
 				<capacities>
-					<li>Blunt</li>
+					<li>Stab</li>
 				</capacities>
 				<power>12</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>VAEAF_FrontGrilleGroup</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-
 			</li>
 		</tools>
 		<comps>
@@ -785,6 +812,9 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalFarm</li>
+			<li>AnimalVehicle</li>
+			<li>VFEAnimalVehicle</li>
+			<li>StorytimeAnimal</li>
 		</tradeTags>
 	</ThingDef>
 
