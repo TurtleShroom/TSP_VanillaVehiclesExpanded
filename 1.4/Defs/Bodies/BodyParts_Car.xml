@@ -39,7 +39,6 @@
 		<hitPoints>50</hitPoints>
 		<tags>
 			<li>Spine</li>
-			<li>Torso</li>
 		</tags>
 	</BodyPartDef>
 
@@ -49,7 +48,6 @@
 		<hitPoints>50</hitPoints>
 		<tags>
 			<li>Spine</li>
-			<li>Torso</li>
 		</tags>
 	</BodyPartDef>
 
@@ -59,7 +57,6 @@
 		<hitPoints>50</hitPoints>
 		<tags>
 			<li>Spine</li>
-			<li>Torso</li>
 		</tags>
 	</BodyPartDef>
 	

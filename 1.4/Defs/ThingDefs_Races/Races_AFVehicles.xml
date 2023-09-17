@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
 	<!-- ======================= Family Car =============================== -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAEAF_CarFamily</defName>
@@ -16,7 +16,6 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<tools>
-
 			<li>
 				<label>front grille</label>
 				<capacities>
@@ -26,7 +25,6 @@
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>VAEAF_FrontGrilleGroup</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-
 			</li>
 		</tools>
 		<comps>
@@ -47,7 +45,7 @@
 			<baseBodySize>1.9</baseBodySize>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
+			<foodType>VegetarianRoughAnimal, Kibble</foodType>
 			<leatherDef>VAEAP_Leather_Car</leatherDef>
 			<trainability>Intermediate</trainability>
 			<wildness>0.7</wildness>
@@ -110,15 +108,13 @@
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>VAEAF_CarFamily</defName>
 		<label>family car</label>
-
 		<race>VAEAF_CarFamily</race>
-		<combatPower>135</combatPower>
-		<ecoSystemWeight>0.30</ecoSystemWeight>
+		<combatPower>55</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<wildGroupSize>
 			<min>4</min>
 			<max>8</max>
 		</wildGroupSize>
-
 		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
@@ -185,7 +181,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAEAF_CarDelivery</defName>
 		<label>delivery truck</label>
-		<description>One of the earliest domesticated vehicles, delivery trucks are a group of extremely dumb herbivores, capable and more than happy to carry packs and burden over long distances..</description>
+		<description>One of the earliest domesticated vehicles, delivery trucks are a group of extremely dumb herbivores, capable and more than happy to carry packs and burden over long distances.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>750</MarketValue>
@@ -196,7 +192,6 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<tools>
-
 			<li>
 				<label>front grille</label>
 				<capacities>
@@ -206,7 +201,6 @@
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>VAEAF_FrontGrilleGroup</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-
 			</li>
 		</tools>
 		<comps>
@@ -228,7 +222,7 @@
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>VAEAP_Leather_Car</leatherDef>
-			<trainability>Simple</trainability>
+			<trainability>Intermediate</trainability>
 			<wildness>0.6</wildness>			
 			<packAnimal>true</packAnimal>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
@@ -288,7 +282,6 @@
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>VAEAF_CarDelivery</defName>
 		<label>delivery truck</label>
-
 		<race>VAEAF_CarDelivery</race>
 		<combatPower>140</combatPower>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
@@ -296,7 +289,6 @@
 			<min>1</min>
 			<max>3</max>
 		</wildGroupSize>
-
 		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
@@ -317,7 +309,6 @@
 		</alternateGraphics>
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAEAF_CarDelivery/CarDelivery</texPath>
 					<drawSize>1.1</drawSize>
@@ -367,7 +358,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAEAF_CarVintage</defName>
 		<label>vintage car</label>
-		<description>Apex predator of the civilised world, vintage car will stalk it’s prey for miles on end before launching a savage attack.\n\nFeared and revered at the same time, vintage cars are excellent battle animals, albeit highly unreliable as friends and companions.</description>
+		<description>The apex predator of the civilised world. A Vintage Car will stalk its prey for miles on end before launching a savage attack.\n\nFeared and revered at the same time, vintage cars are excellent battle animals.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<PsychicSensitivity>0</PsychicSensitivity>
@@ -402,12 +393,12 @@
 			<fleshType>VAEAF_CarFlesh</fleshType>
 			<bloodDef>Filth_MachineBits</bloodDef>
 			<useMeatFrom>VAEAF_CarFamily</useMeatFrom>
-
 			<leatherDef>VAEAP_Leather_Car</leatherDef>
 			<herdAnimal>false</herdAnimal>
+			<packAnimal>false</packAnimal>
 			<predator>true</predator>
 			<baseHungerRate>0.3</baseHungerRate>
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<foodType>CarnivoreAnimal, OvivoreAnimal, Fluid, Kibble</foodType>
 			<wildness>0.80</wildness>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
@@ -415,9 +406,8 @@
 			<gestationPeriodDays>26</gestationPeriodDays>
 			<maxPreyBodySize>2.0</maxPreyBodySize>
 			<baseBodySize>2.5</baseBodySize>
-			<baseHealthScale>2.75</baseHealthScale>     
+			<baseHealthScale>2.75</baseHealthScale>  
 			<lifeExpectancy>25</lifeExpectancy>   
-
 			<wildBiomes>
 				<BorealForest>0.07</BorealForest>
 				<IceSheet>0.02</IceSheet>
@@ -459,10 +449,8 @@
 		<defName>VAEAF_CarVintage</defName>
 		<label>vintage car</label>
 		<race>VAEAF_CarVintage</race>
-		<combatPower>250</combatPower>
-		<ecoSystemWeight>0.5</ecoSystemWeight>
-
-
+		<combatPower>55</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
@@ -566,12 +554,12 @@
 			<fleshType>VAEAF_CarFlesh</fleshType>
 			<bloodDef>Filth_MachineBits</bloodDef>
 			<useMeatFrom>VAEAF_CarFamily</useMeatFrom>
-
 			<leatherDef>VAEAP_Leather_Car</leatherDef>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
+			<packAnimal>true</packAnimal>
 			<baseHungerRate>0.3</baseHungerRate>
-			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<foodType>OmnivoreAnimal, OvivoreAnimal, Fluid, Kibble</foodType>
 			<wildness>0.60</wildness>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
@@ -581,7 +569,6 @@
 			<baseBodySize>2.5</baseBodySize>
 			<baseHealthScale>2.2</baseHealthScale>     
 			<lifeExpectancy>30</lifeExpectancy>   
-
 			<wildBiomes>
 				<BorealForest>0.07</BorealForest>
 				<IceSheet>0.02</IceSheet>
@@ -623,10 +610,8 @@
 		<defName>VAEAF_CarPickup</defName>
 		<label>pickup truck</label>
 		<race>VAEAF_CarPickup</race>
-		<combatPower>190</combatPower>
-		<ecoSystemWeight>0.3</ecoSystemWeight>
-
-
+		<combatPower>55</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
@@ -743,11 +728,11 @@
 			<baseBodySize>3</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>4</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
+			<foodType>VegetarianRoughAnimal, Fluid, Kibble</foodType>
 			<leatherDef>VAEAP_Leather_Car</leatherDef>
-			<trainability>None</trainability>
+			<trainability>Advanced</trainability>
 			<wildness>0.3</wildness>
-
+			<packAnimal>false</packAnimal>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<wildBiomes>
@@ -763,7 +748,6 @@
 				<AridShrubland>0.07</AridShrubland>
 				<Desert>0.05</Desert>
 				<ExtremeDesert>0.01</ExtremeDesert>
-
 			</wildBiomes>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<litterSizeCurve>
@@ -807,7 +791,6 @@
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>VAEAF_CarForklift</defName>
 		<label>forklift</label>
-
 		<race>VAEAF_CarForklift</race>
 		<combatPower>75</combatPower>
 		<ecoSystemWeight>0.05</ecoSystemWeight>
@@ -815,11 +798,8 @@
 			<min>2</min>
 			<max>4</max>
 		</wildGroupSize>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAEAF_CarForklift/CarForklift</texPath>
 					<drawSize>1.1</drawSize>
@@ -860,6 +840,4 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-
 </Defs>
