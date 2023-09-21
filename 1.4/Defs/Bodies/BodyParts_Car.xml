@@ -99,7 +99,7 @@
 		<hitPoints>88</hitPoints>
 		<permanentInjuryChanceFactor>0.5</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
-		<solid>true</solid>
+		<solid>false</solid>
 		<alive>false</alive>
 		<delicate>true</delicate>
 		<bleedRate>2</bleedRate>
@@ -121,7 +121,7 @@
 		<hitPoints>30</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
-		<solid>true</solid>
+		<solid>false</solid>
 		<alive>false</alive>
 		<socketed>true</socketed>
 		<bleedRate>15</bleedRate>
@@ -216,7 +216,7 @@
 		<skinCovered>false</skinCovered>
 		<solid>true</solid>
 		<alive>false</alive>
-		<bleedRate>0.01</bleedRate>
+		<bleedRate>0</bleedRate>
 		<delicate>false</delicate>
 		<spawnThingOnRemoved MayRequire="oskarpotocki.vanillavehiclesexpanded">VVE_CarSuspension</spawnThingOnRemoved>
 		<forceAlwaysRemovable MayRequire="oskarpotocki.vanillavehiclesexpanded">true</forceAlwaysRemovable>
@@ -233,9 +233,9 @@
 		<frostbiteVulnerability>1</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
-		<solid>false</solid>
+		<solid>true</solid>
 		<alive>false</alive>
-		<bleedRate>0.01</bleedRate>
+		<bleedRate>0</bleedRate>
 		<delicate>false</delicate>
 		<spawnThingOnRemoved MayRequire="oskarpotocki.vanillavehiclesexpanded">VVE_CarExhaust</spawnThingOnRemoved>
 		<forceAlwaysRemovable MayRequire="oskarpotocki.vanillavehiclesexpanded">true</forceAlwaysRemovable>
@@ -274,7 +274,7 @@
 		<frostbiteVulnerability>0.4</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
-		<solid>true</solid>
+		<solid>false</solid>
 		<alive>false</alive>
 		<delicate>true</delicate>
 		<bleedRate>1</bleedRate>
