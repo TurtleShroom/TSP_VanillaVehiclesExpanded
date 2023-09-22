@@ -195,7 +195,7 @@
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0.1</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
-		<solid>true</solid>
+		<solid>false</solid>
 		<alive>false</alive>
 		<bleedRate>0.6</bleedRate>
 		<delicate>true</delicate>
